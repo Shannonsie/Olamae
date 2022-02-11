@@ -66,7 +66,6 @@ h1{
 
 h1.proto{
     font-size: 35px;
-    margin: 5px 0 5px;
     text-align: center;
 }
 p{
@@ -169,7 +168,4 @@ p{
     color: #fff;
     font-family: 'lato',sans-serif;
     text-decoration: none;
-}
-.prototype{
-    align-items: center;
 }
