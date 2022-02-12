@@ -3,7 +3,10 @@
     padding:0;
     font-family: 'Lato', sans-serif;
 }
-
+a{
+    text-decoration: none;
+    color:#fff;
+}
 .top{
     width:100%;
     height: 100vh;
@@ -13,16 +16,17 @@
     overflow:hidden;
 }
 .top2{
-    width:100%;
     background-color:#F08170;
-    background-size: cover;
-    background-position: relative;
     overflow:hidden;
+    width:100%;
+    height:100%;
+    background-size:auto;
 }
 
 .logo{
     width: 100px;
     cursor: pointer;
+    display:block;
 }
 
 .logo2{
@@ -48,6 +52,12 @@ button{
     outline: none;
     cursor:pointer;
 }
+.navbut{
+    color:#fbfcfd;
+    padding: 10px 25px;
+    outline: none;
+    cursor:pointer;
+}
 
 .content{
     color:white;
@@ -64,14 +74,15 @@ h1{
     margin: 5px 0 5px;
 }
 
-h1.proto{
+h2{
     font-size: 35px;
     text-align: center;
+    color:white;
 }
 p{
     font-size: 12px;
-    margin: 10px 0 5px;
-    padding-left: 100px;
+    text-align: center;
+    color: white;
 }
 
 .sidebar{
@@ -84,7 +95,7 @@ p{
 }
 .sidebar2{
     width:50px;
-    height:120vh;
+    height:100%;
     background:linear-gradient(#8f2222, #d44a4a);
     position:absolute;
     right:0;
@@ -120,7 +131,9 @@ p{
     position: absolute;
     bottom: 0px;
 }
-
+.prototype{
+    align-items: center;
+}
 @keyframes tool{
     0%{
         transform: translateY(0);
@@ -146,7 +159,7 @@ p{
 }
 .tools img:nth-child(2){
     animation-delay: 2s;
-    width: 100px;
+    width: 90px;
 }
 .tools img:nth-child(3){
     animation-delay: 1s;
@@ -158,14 +171,80 @@ p{
 }
 .tools img:nth-child(5){
     animation-delay: 2s;
-    width: 70px;
+    width: 50px;
 }
 .tools img:nth-child(6){
     animation-delay: 1s;
-    width: 120px;
+    width: 70px;
 }
 .app{
     color: #fff;
     font-family: 'lato',sans-serif;
     text-decoration: none;
+}
+
+@media only screen and (max-width:700px){
+   
+
+.tools img:nth-child(1){
+    animation-delay: 1s;
+    width: 50px;
+}
+.tools img:nth-child(2){
+    animation-delay: 2s;
+    width: 70px;
+}
+.tools img:nth-child(3){
+    animation-delay: 1s;
+    width: 50px;
+}
+.tools img:nth-child(4){
+    animation-delay: 0s;
+    width: 60px;
+}
+.tools img:nth-child(5){
+    animation-delay: 2s;
+    width: 70px;
+}
+.tools img:nth-child(6){
+    animation-delay: 1s;
+    width: 50px;
+}
+
+h1{
+    font-size: 40px;
+    margin: 5px 0 5px;
+}
+small {
+    display: none;
+}
+.proto{
+    width: 50%;
+}
+h2{
+    font-size: 20px;
+    margin: 10px 0 5px;
+    text-align: center;
+    color: #fff;
+}
+p{
+    display:none;
+}
+.logo{
+    width: 70px;
+    cursor: pointer;
+    display:block;
+}
+iframe{
+    width: 250px;
+    height: 500px;
+}
+.navbar{
+    width:70%;
+    height:15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
 }
